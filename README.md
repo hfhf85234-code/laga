@@ -1,10 +1,11 @@
-# Site web Next.js + Tailwind CSS
+# Site web complet Next.js + Tailwind CSS
 
-Projet de démarrage pour créer un site vitrine moderne avec:
+Template prêt à l'emploi pour une landing page moderne avec:
 
 - Next.js (App Router)
-- TypeScript
+- TypeScript strict
 - Tailwind CSS
+- Composants réutilisables (Hero, Features, Get Started, Footer)
 
 ## Démarrage
 
@@ -13,11 +14,18 @@ npm install
 npm run dev
 ```
 
-Puis ouvrir [http://localhost:3000](http://localhost:3000).
+Puis ouvrez [http://localhost:3000](http://localhost:3000).
 
 ## Scripts
 
-- `npm run dev`: lance le serveur de développement
+- `npm run dev`: serveur de développement
 - `npm run build`: build de production
-- `npm run start`: démarre le build
-- `npm run lint`: lance ESLint
+- `npm run start`: exécute le build
+- `npm run lint`: linting ESLint
+
+## Structure
+
+- `app/layout.tsx`: layout racine + metadata
+- `app/page.tsx`: assemblage de la landing page
+- `components/*`: sections de l'interface
+- `app/globals.css`: styles globaux Tailwind
